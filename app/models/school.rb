@@ -62,9 +62,7 @@ class School < ActiveRecord::Base
 	end
 
   def self.index_search(params)
-    if params['school_name']
-      school_name = params['school_name']
-    end
+    school_name = params['school_name'] if params['school_name']
     if params['school_region_id']
       region_ids = params['school_region_id'].map(&:to_i)
     end
@@ -72,7 +70,6 @@ class School < ActiveRecord::Base
       school_locales = params['school_locale'].map(&:to_i)
       school_locales.map! { |l| [l, l-1, l-2]}.flatten!
     end
-
     query = fuzzy_search_school(school_name) if school_name
     if query && school_locales
       query = query.where_school_locale_equals(school_locales)

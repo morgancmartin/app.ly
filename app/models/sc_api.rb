@@ -4,18 +4,19 @@ class ScAPI
   include HTTParty
   BASE_URI = 'https://api.data.gov/ed/collegescorecard/v1/schools.json?'
   API_KEY = '&api_key=fXi2CD8bCMCZAVOI7nx0PgTVv766uCpyH6TvM4eN'
+
   def initialize
     reset_request
-    @fields = []
+    @fields    = []
     @sort_desc = false
-    @request = ''
+    @request   = ''
   end
 
   def update_request
     @request = BASE_URI + '_fields='
-    add_fields_to_request if @fields.any?
-    add_sort_to_request if @sort_opt
-    add_page_to_request if @page
+    add_fields_to_request   if @fields.any?
+    add_sort_to_request     if @sort_opt
+    add_page_to_request     if @page
     add_per_page_to_request if @per_page
     @request += API_KEY
   end
@@ -172,5 +173,4 @@ class ScAPI
     @request += '&api_key=fXi2CD8bCMCZAVOI7nx0PgTVv766uCpyH6TvM4eN'
     @response = HTTParty.get(@request)
   end
-
 end

@@ -4,11 +4,11 @@ Rails.application.routes.draw do
 
   root "users#index"
 
-  resources :users do 
+  resources :users do
     resources :reviews, :only => [:index, :show]
   end
 
-  resources :schools do 
+  resources :schools do
     resources :reviews
     resources :bookmarks, only: [:create, :update, :destroy]
   end

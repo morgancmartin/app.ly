@@ -2,7 +2,6 @@ class YelpAPI
 
   require 'yelp'
 
-    
   def initialize
     @client = Yelp::Client.new({
              consumer_key: Rails.application.secrets.consumer_key,
@@ -20,14 +19,4 @@ class YelpAPI
     search_coords[:latitude] = coords["lat"]
     top_ten = @client.search_by_coordinates(search_coords, @params)
   end
-
-
-
-
-
-
-
-
-
-
 end

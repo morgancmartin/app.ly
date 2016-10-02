@@ -14,7 +14,11 @@ Users can:
 * Leave reviews
 * See nearby restaurants
 
-Data comes from the College Scorecard API.
+### Technological Highlights 
+* Ruby on Rails back-end framework
+* Date comes from the College Scorecard API
+* Interfaces with Yelp's API
+* SQL Queries for search
 
 ## Developer Team
 
