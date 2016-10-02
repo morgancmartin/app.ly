@@ -1,10 +1,10 @@
 # App.ly
 
-Check it out [here!](https://apply-.herokuapp.com)
+Check it out [here!](https://applyapp.herokuapp.com)
 
 ## Overview
 
-College SC is a resource for college applicants and their families. Easily search from 500 colleges and universities. Browse through important information about admissions, the student body, finances, and academics.
+App.ly is a resource for college applicants and their families. Easily search from 500 colleges and universities. Browse through important information about admissions, the student body, finances, and academics.
 
 ### Features
 
