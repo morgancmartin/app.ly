@@ -8,11 +8,26 @@ App.ly is a resource for college applicants and their families. Easily search fr
 
 ### Features
 
-Users can:
+* Sign up
+![](app/assets/images/apply_landing.png?raw=true)
+
+* Search for schools
+![](app/assets/images/apply_search.png?raw=true)
+
 * Bookmark schools
+![](app/assets/images/apply_school_1.png?raw=true)
+
 * Compare schools
+![](app/assets/images/apply_comparison.png?raw=true)
+
+* Manage application to-do's
+![](app/assets/images/apply_timeline.png?raw=true)
+
 * Leave reviews
+![](app/assets/images/apply_review.png?raw=true)
+
 * See nearby restaurants
+![](app/assets/images/apply_yelp.png?raw=true)
 
 ### Technological Highlights 
 * Ruby on Rails back-end framework
